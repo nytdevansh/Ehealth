@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Dasboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head-bar">
+  <div class="logo">
+    <img src="Untitled.jpeg" width="110">
+  </div>
+
+  <div class="head">
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    
+    
+  </div>
+
+    <div class="login">
+        <div class="Sign">
+      <a href="#">Sign out</a>
+    </div>
+    </div>
+    </div>
+    <div class="dashboard">
+      <h1>Please Select Operation</h1>
+        <div class="options">
+        <div class="appointment">
+            <a href="#" onclick="showSection('view-section')">View Appointments</a>
+        </div>
+        <div class="records">
+            <a href="#" onclick="showSection('Access-section')">Access Records</a>
+        </div>
+        <div class="Write">
+          <a href="https://www.google.com" >Write Prescription</a>
+        </div>
+        <div class="avalable">
+          <a href="#" onclick="showSection('calendar-section')">Availablity</a>
+        </div>
+        </div>
+    </div>
+   <div class="view" id="view-section" style="display: none;">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTxBkKL-AKs0ba9Cwm4xMRxBz5Ce_HXQ3xRfvxgudUXuF9jmQgq09iHQ_UdG1bsvcRp18FjRjTFJ5PQ/pubhtml"
+  width=100%
+  height=500px      
+  frameborder="0">
+</iframe>
+   </div>
+   <div class="Access" id="Access-section" style="display: none;">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSo0NcfXNCgqpFrjRikcUuhtTPVPhx_V411pNwGp0Pchh2sPe-Vns9UwYhF69FREP0ACZXKLwUa-aWn/pubhtml" 
+    width=100%
+    height=500px 
+    frameborder="0"></iframe>
+   </div>
+  <div id="calendar-section" style="display: none;">
+  <div class="calendar" id="calendar"></div>
+  <button onclick="logAvailability()">Save Availability</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(77, 176, 233);
+    margin: 0;
+    padding: 20px;
+}
+
+
+.head-bar {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(6, 112, 243);
+    border-radius: 40px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 20px;
+
+}
+h1{
+    align-items: center;
+    margin-left: 35%;
+}
+
+.logo img {
+    border-radius: 20px;
+    width: 110px;
+    height: auto;
+}
+
+
+.head {
+    margin-left: 20px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.head a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.head a:hover {
+    opacity: 1;
+}
+
+
+.login {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+.login a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+ 
+}
+
+.login a:hover {
+    opacity: 1;
+}
+
+
+.Sign a {
+    background-color: white;
+    color: black;
+    padding: 8px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+    transition: box-shadow 0.2s;
+}
+
+.Sign a:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.25);
+}
+
+
+.options{
+    padding: 20px;
+    display: flex;
+    gap: 24px;
+    border: 1px solid;
+    border-color: aliceblue;
+    width: auto;
+    height: max-content;
+    border-radius: 20px;
+    background-color: aqua;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: rgb(46, 49, 52);
+}
+.view{
+    border: 1px solid;
+    width: 70%;
+    height: auto;
+}
+.options a:hover{
+    color: red;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 350px;
+    }
+.day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar{
+
+
+}
